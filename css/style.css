@@ -11,7 +11,7 @@
     margin: 0 auto;
     width: 90%;
     /* debug */
-    background-color: lightgreen;
+    /* background-color: lightgreen; */
     height: 100%;
 }
 
@@ -64,14 +64,85 @@ header .container{
     border: 1px dashed black;
 }
 
+.center {
+    text-align:center;
+    font-size: 80px;
+}
+
+.box {
+    margin: 10px;
+    border: 1px dashed green;
+    min-height: 100px;
+}
+
+.text {
+    /* height: 200px; */
+    width: 100%;
+    background-color: beige;
+    border: 1px dashed red;
+}
+
+h4, h3, h2, p{
+    padding: 10px;
+}
+
+
+#image-large{
+    /* height: 200px; */
+    width: 100%;
+    background-color:beige;
+    border: 1px dashed red;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#image-large img{
+    max-width: 80%;
+}
+
+/* seconda sezione */
+
+.coloured {
+    background-color:#9792E4;
+    /* debug */
+    /* height: 200px; */
+}
+
+#picture{
+    /* debug */
+    height: 200px;
+    background-color:antiquewhite;
+    border: 1px dashed black;
+}
+
+#picture-text{
+    /* debug */
+    height: 200px;
+    background-color: antiquewhite;
+    border: 1px dashed black;
+}
+
+.col-box img{
+    max-width: 100%;
+}
+
+/* sezione profili */
+
+.text-users{
+    text-align: center;
+    margin: 10px 20px;
+}
+
 /* FOOTER */
 
 /* SEZIONE RESPONSIVE */
 
 /* visualizzazione tablet */
 
-@media all and (min-width:768px) {
+@media all and (min-width:600px) {
     
+    /* regola per rendere in flex le card di prima sezione */
     .row-flex{
         display: flex;
         justify-content: space-between;
@@ -91,19 +162,38 @@ header .container{
 
 @media all and (min-width:1025px) {
 
-    .container{
-        width: 70%;
-    }
-
-    header #hamburger{
+    /* scomparsa hamburger nell'header */
+    header #hamburger {
         display: none;
     }
-
+     /* regola per l'apparizione menu navigazione a lato */
     #list{
         display: block;
         background-color: violet;
         height: 40px;
         width: 300px;
     }
+
+    /* restingimento della prima sezione */
+    #description .container {
+        width: 70%;
+    }
+
+    /* contenuto card in flex */
+    .box {
+        display: flex;
+    }
+    
+    /* immagine phone della prima card */
+    #image-large img {
+        /* display: block; */
+        max-width: 50%;
+    }
+
+    /* restringimento della seconda sezione */
+    #planning .container{
+        width: 60%;
+    }
+
     
 }
