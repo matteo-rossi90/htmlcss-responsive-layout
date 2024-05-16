@@ -92,9 +92,9 @@ h4, h3, h2, p{
     width: 100%;
     background-color:beige;
     border: 1px dashed red;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    /* display: flex; */
+    /* flex-direction: column; */
+    /* align-items: center; */
 }
 
 #image-large img{
@@ -129,9 +129,34 @@ h4, h3, h2, p{
 
 /* sezione profili */
 
-.text-users{
+.text-users, .description-user{
     text-align: center;
     margin: 10px 20px;
+}
+
+.col-user{
+    background-color: #9792E4;
+    height: calc(100% / 3);
+    border: 1px dashed red;
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+}
+
+.description-user{
+    /* padding: 10px; */
+    background-color: yellow;
+}
+
+.image-user{
+    width: 150px;
+    height: 150px;
+    background-image: url('../img/testimonial1.jpg');
+    background-size: cover;
+    background-position: center;
+    border-radius: 100%;
+    padding: 10px;
 }
 
 /* FOOTER */
@@ -155,6 +180,21 @@ h4, h3, h2, p{
 
     .col-large{
         width: calc((100% / 3)*2)
+    }
+
+    /* regole per card dei profili */
+    .description-user{
+        width: 80%;
+        float: right;
+    }
+
+    .col-user{
+        display: block;
+        height: 200px;
+        width: 100%;
+    }
+    .image-user{
+        float: left;
     }
 }
 
@@ -193,6 +233,11 @@ h4, h3, h2, p{
     /* restringimento della seconda sezione */
     #planning .container{
         width: 60%;
+    }
+
+    /* restringimento della sezione profili */
+    #section-users .container {
+        width: 70%;
     }
 
     
