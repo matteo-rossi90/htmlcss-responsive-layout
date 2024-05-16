@@ -7,10 +7,103 @@
     font-family: 'PT Sans', 'Arial Narrow', Arial, sans-serif;
 }
 
+.container{
+    margin: 0 auto;
+    width: 90%;
+    /* debug */
+    background-color: lightgreen;
+    height: 100%;
+}
+
 /* HEADER */
 
+header{
+    height: 70px;
+    background-color: #0084FD;
+}
+
+header .container{
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+}
+
+#logo{
+    /* debug */
+    height: 40px;
+    width: 70px;
+    background-color: red;
+}
+
+#hamburger {
+    /* debug */
+    height: 40px;
+    width: 70px;
+    background-color: red;
+}
+
+#list{
+    display: none;
+}
+
 /* PARTE CENTRALE */
+
+/* descrizione funzionalità */
+
+#description{
+    background-color: lightcoral;
+    /* height: 200px; */
+    margin-top: 2rem;
+}
+
+.col{
+    display: block;
+    background-color: #B5DDFF;
+    min-height: 200px;
+    margin-bottom: 10px;
+    border: 1px dashed black;
+}
 
 /* FOOTER */
 
 /* SEZIONE RESPONSIVE */
+
+/* visualizzazione tablet */
+
+@media all and (min-width:768px) {
+    
+    .row-flex{
+        display: flex;
+        justify-content: space-between;
+        gap: 10px;
+    }
+
+    .col{
+        width: calc((100% / 3) - 5px)
+    }
+
+    .col-large{
+        width: calc((100% / 3)*2)
+    }
+}
+
+/* visualizzazione desktop */
+
+@media all and (min-width:1025px) {
+
+    .container{
+        width: 70%;
+    }
+
+    header #hamburger{
+        display: none;
+    }
+
+    #list{
+        display: block;
+        background-color: violet;
+        height: 40px;
+        width: 300px;
+    }
+    
+}
