@@ -481,6 +481,12 @@ footer a{
 
 @media all and (min-width:1025px) {
 
+    /* restringimento header */
+
+    header .container{
+        width: 70%;
+    }
+
     /* scomparsa hamburger nell'header */
     header .fa-bars {
         display: none;
