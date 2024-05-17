@@ -568,6 +568,11 @@ footer a{
         width: calc((100% / 3) - 20px);
         margin: 10px 0;
     }
+
+    /* restringimento sezione benefici */
+    #benefits .container{
+        width: 70%;
+    }
 }
 
 /* schermi più grandi */
