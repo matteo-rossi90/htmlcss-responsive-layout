@@ -26,6 +26,10 @@ a {
     padding: 10px;
 }
 
+p{
+    line-height: 30px;
+}
+
 h1{
     color:#9792E4;
     font-size: 60px;
@@ -42,6 +46,7 @@ h4{
 
 .btn {
     border-radius: 50px;
+    margin: 10px 0;
 }
 
 .btn-white{
@@ -54,6 +59,12 @@ h4{
     padding: 8px 50px;
     background-color:#0084FD;
     color: white;
+}
+
+.btn-purple{
+    background-color:#9792E4;
+    color: white;
+    padding: 8px 30px;
 }
 
 article a{
@@ -140,7 +151,6 @@ main{
 .paragraph{
     font-size: 16px;
     color: rgb(100, 100, 100);
-    line-height: 30px;
     font-weight:700;
 }
 
@@ -163,10 +173,41 @@ main{
     display:flex;
     flex-direction: column;
     align-items:center;
+    margin: 20px 0;
 }
 
-.col-box img{
+#planning-image img{
     max-width: 100%;
+}
+
+#development img{
+    max-width: 80%;
+}
+
+#development{
+    background-color: white;
+    border-radius: 25px;
+    padding: 10px;
+
+}
+
+.app-text{
+    color: black;
+    text-align: center;
+}
+
+#circle-icon{
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+    padding: 5px;
+    background-color: #9792E4;
+    text-align: center;
+    line-height: 30px;
+}
+
+.fa-arrow-down{
+    color: black;
 }
 
 /* sezione profili */
@@ -174,6 +215,11 @@ main{
 .text-users, .description-user, #title-benefits{
     text-align: center;
     margin: 10px 20px;
+}
+
+.text-users > h2{
+    color:#9792E4;
+    font-size: 35px;
 }
 
 .col-user{
@@ -184,11 +230,11 @@ main{
     flex-direction: column; 
     align-items: center;
     padding: 15px;
+    color: white;
 }
 
 .description-user{
     padding: 10px;
-    /* background-color: yellow; */
 }
 
 .image-user{
@@ -213,19 +259,29 @@ main{
 
 
 /* sezione benefici */
+#title-benefits{
+    font-size: 30px;
+}
 
-#benefits-card{
+#benefits a{
+    text-decoration: none;
+}
+
+#benefits-card, #about-container > p{
     padding: 10px;
-    color: #b0b0b0;
+    color: #606060;
 }
 
 .col-benefits{
     display: block;
-    /* height: 400px; */
     background-color: white;
     margin: 20px 0;
-    padding: 15px;
+    padding: 20px;
     border-radius: 20px;
+}
+
+.col-benefits h4{
+    color:#9792E4;
 }
 
 /* sezione about us */
@@ -250,6 +306,15 @@ main{
     font-size: 70px;
 }
 
+#about-image > div.button a,
+#free-container > div.button a {
+    text-decoration: none;
+}
+
+#about-image>div.button a{
+    font-weight: 800;
+}
+
 /* sezione free */
 
 #free{
@@ -268,6 +333,16 @@ main{
     margin: 15px 0;
 }
 
+#free-container > div.button a{
+    color:#9792E4;
+    font-weight: 800;
+    font-size: 20px;
+}
+
+#btn-big{
+    padding: 20px 50px;
+}
+
 /* FOOTER */
 
 footer{
@@ -275,10 +350,12 @@ footer{
     background-color: #333333;
     color: white;
     text-align: center;
+    font-size: 12px;
 }
 
 footer p{
     padding: 20px 10px;
+    line-height: normal;
 }
 
 /* SEZIONE RESPONSIVE */
@@ -324,6 +401,10 @@ footer p{
         flex-direction: row;
         align-items: center;
         justify-content: space-between;
+    }
+
+    div.description-user{
+        text-align:left;
     }
 
     /* regole per card benefici */
@@ -406,9 +487,10 @@ footer p{
         width: 70%;
     }
 
-    /* contenuto card in flex */
+    /* contenuto card in flex delle seconda sezione */
     .box {
         display: flex;
+        gap: 40px;
     }
     
     /* immagine phone della prima card */
