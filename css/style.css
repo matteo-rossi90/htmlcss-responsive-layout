@@ -315,6 +315,17 @@ main{
     font-weight: 800;
 }
 
+#quote .image-user{
+    position:relative;
+}
+
+#quote i.fa-quote-left{
+    /* position: absolute; */
+    /* left:30px; */
+    font-size: 50px;
+    color:#9792E4;
+}
+
 /* sezione free */
 
 #free{
@@ -421,7 +432,7 @@ footer p{
         margin-top: 10px;
     }
 
-    /* regole per rendere in flex il contenuto
+    /* regole per rendere flex il contenuto
     nella sezione about us */
 
     #about-flex{
@@ -435,6 +446,13 @@ footer p{
     #about-image {
         width: 30%;
     }
+
+    /* regola virgolette nella foto profilo about us */
+
+    /* #quote i.fa-quote-left { */
+        /* position: absolute; */
+        /* left: 80%; */
+    /* } */
 
     /* restringimento della sezione free */
     #free .container{
@@ -513,11 +531,6 @@ footer p{
         width: 70%;
     }
 
-    /* restringimento della sezione profili */
-    .container {
-        width: 70%;
-    }
-
     /* regola per visualizzare le cards dei benefici
     in file da tre */
 
@@ -525,6 +538,13 @@ footer p{
         width: calc((100% / 3) - 20px);
         margin: 10px 0;
     }
+
+    /* regola virgolette nella foto profilo about us */
+
+    /* #quote i.fa-quote-left { */
+        /* position: absolute; */
+        /* right: 80px; */
+    /* } */
 }
 
 /* schermi più grandi */
