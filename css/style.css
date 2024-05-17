@@ -10,9 +10,58 @@
 .container{
     margin: 0 auto;
     width: 90%;
-    /* debug */
-    /* background-color: lightgreen; */
     height: 100%;
+}
+
+section{
+    padding: 25px 0;
+}
+
+h4,
+h3,
+h2,
+h1,
+p,
+a {
+    padding: 10px;
+}
+
+h1{
+    color:#9792E4;
+    font-size: 60px;
+    font-weight: 900;
+}
+
+h4{
+    font-size: 20px;
+}
+
+.button{
+    padding: 25px 10px;
+}
+
+.btn {
+    border-radius: 50px;
+}
+
+.btn-white{
+    padding: 8px 16px;
+    background-color: white;
+    color: black;
+}
+
+.btn-blue{
+    padding: 8px 50px;
+    background-color:#0084FD;
+    color: white;
+}
+
+article a{
+    text-decoration: none;
+}
+
+.text p, article a{
+    margin: 10px 0;
 }
 
 /* HEADER */
@@ -20,6 +69,11 @@
 header{
     height: 70px;
     background-color: #0084FD;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index:900;
 }
 
 header .container{
@@ -28,18 +82,10 @@ header .container{
     align-items:center;
 }
 
-#logo{
-    /* debug */
-    height: 40px;
-    width: 70px;
-    background-color: red;
-}
-
-#hamburger {
-    /* debug */
-    height: 40px;
-    width: 70px;
-    background-color: red;
+.fa-bars{
+    font-size: 25px;
+    text-align: right;
+    color: white;
 }
 
 #list{
@@ -48,20 +94,23 @@ header .container{
 
 /* PARTE CENTRALE */
 
+main{
+    padding-top: 40px;
+}
+
 /* descrizione funzionalità */
 
 #description{
-    background-color: lightcoral;
-    /* height: 200px; */
     margin-top: 2rem;
 }
 
 .col{
     display: block;
     background-color: #B5DDFF;
-    min-height: 200px;
-    margin-bottom: 10px;
-    border: 1px dashed black;
+    border-radius: 20px;
+    /* min-height: 200px; */
+    margin-bottom: 20px;
+    /* border: 1px dashed black; */
 }
 
 .center {
@@ -69,58 +118,51 @@ header .container{
     font-size: 80px;
 }
 
-.box {
-    margin: 10px;
-    border: 1px dashed green;
-    min-height: 100px;
-}
-
 .text {
-    /* height: 200px; */
     width: 100%;
-    background-color: beige;
-    border: 1px dashed red;
-}
-
-h4, h3, h2, p{
-    padding: 10px;
+    margin: 10px;
 }
 
 
 #image-large{
-    /* height: 200px; */
     width: 100%;
-    background-color:beige;
-    border: 1px dashed red;
-    /* display: flex; */
-    /* flex-direction: column; */
-    /* align-items: center; */
+    margin-top: 25px;
+    position: relative;
 }
 
 #image-large img{
-    max-width: 80%;
+    display: table-cell;
+    vertical-align: middle;
+    max-width: 70%;
+    margin: 0 45px;
+}
+
+.paragraph{
+    font-size: 16px;
+    color: rgb(100, 100, 100);
+    line-height: 30px;
+    font-weight:700;
+}
+
+.title{
+    font-size: 25px;
+}
+
+.col > i, .title{
+    color:#0084FD;
 }
 
 /* seconda sezione */
 
 .coloured {
     background-color:#9792E4;
-    /* debug */
-    /* height: 200px; */
+    color: white;
 }
 
-#picture{
-    /* debug */
-    height: 200px;
-    background-color:antiquewhite;
-    border: 1px dashed black;
-}
-
-#picture-text{
-    /* debug */
-    height: 200px;
-    background-color: antiquewhite;
-    border: 1px dashed black;
+.col-box{
+    display:flex;
+    flex-direction: column;
+    align-items:center;
 }
 
 .col-box img{
@@ -129,37 +171,115 @@ h4, h3, h2, p{
 
 /* sezione profili */
 
-.text-users, .description-user{
+.text-users, .description-user, #title-benefits{
     text-align: center;
     margin: 10px 20px;
 }
 
 .col-user{
     background-color: #9792E4;
-    height: calc(100% / 3);
-    border: 1px dashed red;
-    margin-bottom: 10px;
+    border-radius: 30px;
+    margin: 10px;
     display: flex;
     flex-direction: column; 
     align-items: center;
+    padding: 15px;
 }
 
 .description-user{
-    /* padding: 10px; */
-    background-color: yellow;
+    padding: 10px;
+    /* background-color: yellow; */
 }
 
 .image-user{
     width: 150px;
     height: 150px;
-    background-image: url('../img/testimonial1.jpg');
     background-size: cover;
     background-position: center;
     border-radius: 100%;
+}
+
+#Nat{
+    background-image: url('../img/testimonial1.jpg');
+}
+
+#Celia{
+    background-image: url('../img/testimonial2.jpg');
+}
+
+#Bob{
+    background-image: url('../img/testimonial3.jpg');
+}
+
+
+/* sezione benefici */
+
+#benefits-card{
+    padding: 10px;
+    color: #b0b0b0;
+}
+
+.col-benefits{
+    display: block;
+    /* height: 400px; */
+    background-color: white;
+    margin: 20px 0;
+    padding: 15px;
+    border-radius: 20px;
+}
+
+/* sezione about us */
+
+#about-container, 
+#about-image{
     padding: 10px;
 }
 
+#quote{
+    background-image: url('../img/about.jpg')
+}
+
+#text-about{
+    color:#9792E4;
+    font-size: 25px;
+    font-weight: 900;
+}
+
+#text-free{
+    color: #FDC15F;
+    font-size: 70px;
+}
+
+/* sezione free */
+
+#free{
+    text-align:center;
+}
+
+#free-container{
+    padding: 5px 0;
+}
+
+#free-container h4,
+#free-container h2,
+#free-container h1,
+#free-container p,
+#copyright{
+    margin: 15px 0;
+}
+
 /* FOOTER */
+
+footer{
+    /* height: 400px; */
+    background-color: #333333;
+    color: white;
+    text-align: center;
+}
+
+footer p{
+    padding: 20px 10px;
+}
 
 /* SEZIONE RESPONSIVE */
 
@@ -182,20 +302,70 @@ h4, h3, h2, p{
         width: calc((100% / 3)*2)
     }
 
+    /* immagine phone della prima card */
+    #image-large img {
+        display: flex;
+        margin-left: 0;
+        margin-right: 0;
+        max-width: 60%;
+    }
+
     /* regole per card dei profili */
     .description-user{
         width: 80%;
-        float: right;
+    }
+
+    .object-user{
+        width: 20%;
     }
 
     .col-user{
-        display: block;
-        height: 200px;
-        width: 100%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
     }
-    .image-user{
-        float: left;
+
+    /* regole per card benefici */
+
+    #benefits-card{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        /* gap: 20px; */
     }
+
+    .col-benefits{
+        width: calc((100% / 2) - 15px);
+        margin-top: 10px;
+    }
+
+    /* regole per rendere in flex il contenuto
+    nella sezione about us */
+
+    #about-flex{
+        display: flex;
+    }
+
+    #about-container{
+        width: 70%;
+    }
+
+    #about-image {
+        width: 30%;
+    }
+
+    /* restringimento della sezione free */
+    #free .container{
+        width: 50%;
+    }
+
+    /* restringimento del footer */
+
+    footer .container{
+        width: 50%;
+    }
+    
 }
 
 /* visualizzazione desktop */
@@ -203,18 +373,35 @@ h4, h3, h2, p{
 @media all and (min-width:1025px) {
 
     /* scomparsa hamburger nell'header */
-    header #hamburger {
+    header .fa-bars {
         display: none;
     }
      /* regola per l'apparizione menu navigazione a lato */
     #list{
         display: block;
-        background-color: violet;
-        height: 40px;
-        width: 300px;
     }
 
-    /* restingimento della prima sezione */
+    #list ul{
+        display: flex;
+        list-style-type: none;
+    }
+
+    #list ul li a{
+        text-decoration: none;
+    }
+
+    #list li{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-left: 5px;
+    }
+
+    #list .menu-list a{
+        color: white;
+    }
+
+    /* restringimento della prima sezione */
     #description .container {
         width: 70%;
     }
@@ -225,9 +412,13 @@ h4, h3, h2, p{
     }
     
     /* immagine phone della prima card */
+    #image-large{
+        margin-top: 70px;
+    }
+
     #image-large img {
-        /* display: block; */
-        max-width: 50%;
+        display: flex;
+        max-width: 80%;
     }
 
     /* restringimento della seconda sezione */
@@ -240,5 +431,30 @@ h4, h3, h2, p{
         width: 70%;
     }
 
+    /* restringimento della sezione profili */
+    .container {
+        width: 70%;
+    }
+
+    /* regola per visualizzare le cards dei benefici
+    in file da tre */
+
+    .col-benefits {
+        width: calc((100% / 3) - 20px);
+        margin: 10px 0;
+    }
+}
+
+/* schermi più grandi */
+
+@media all and (min-width:1200px) {
     
+    /* regole per card dei profili */
+    .description-user {
+        width: 85%;
+    }
+    
+    .object-flex {
+        width: 15%;
+    }
 }
