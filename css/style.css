@@ -44,6 +44,10 @@ h4{
     padding: 25px 10px;
 }
 
+.btn-blue, .btn-white, div.col-benefits > .button a{
+    letter-spacing: 2px;
+}
+
 .btn {
     border-radius: 50px;
     margin: 10px 0;
@@ -119,9 +123,7 @@ main{
     display: block;
     background-color: #B5DDFF;
     border-radius: 20px;
-    /* min-height: 200px; */
     margin-bottom: 20px;
-    /* border: 1px dashed black; */
 }
 
 .center {
@@ -178,6 +180,10 @@ main{
 
 #planning-image img{
     max-width: 100%;
+}
+
+#planning-image > h2{
+    font-size: 30px;
 }
 
 #development img{
@@ -292,7 +298,8 @@ main{
 }
 
 #quote{
-    background-image: url('../img/about.jpg')
+    background-image: url('../img/about.jpg');
+    position:relative;
 }
 
 #text-about{
@@ -315,13 +322,9 @@ main{
     font-weight: 800;
 }
 
-#quote .image-user{
-    position:relative;
-}
-
 #quote i.fa-quote-left{
-    /* position: absolute; */
-    /* left:30px; */
+    position: absolute;
+    right: 0;
     font-size: 50px;
     color:#9792E4;
 }
@@ -357,7 +360,6 @@ main{
 /* FOOTER */
 
 footer{
-    /* height: 400px; */
     background-color: #333333;
     color: white;
     text-align: center;
@@ -367,6 +369,10 @@ footer{
 footer p{
     padding: 20px 10px;
     line-height: normal;
+}
+
+footer a{
+    color:#9792E4;
 }
 
 /* SEZIONE RESPONSIVE */
@@ -398,6 +404,14 @@ footer p{
         max-width: 60%;
     }
 
+    /* regole per seconda sezione */
+
+    #planning-image{
+        display: flex;
+        align-items: flex-start;
+    }
+
+
     /* regole per card dei profili */
     .description-user{
         width: 80%;
@@ -424,7 +438,6 @@ footer p{
         display: flex;
         justify-content: space-between;
         flex-wrap: wrap;
-        /* gap: 20px; */
     }
 
     .col-benefits{
@@ -447,12 +460,9 @@ footer p{
         width: 30%;
     }
 
-    /* regola virgolette nella foto profilo about us */
-
-    /* #quote i.fa-quote-left { */
-        /* position: absolute; */
-        /* left: 80%; */
-    /* } */
+    #about-image > .button a{
+        font-size: 13px;
+    }
 
     /* restringimento della sezione free */
     #free .container{
@@ -475,6 +485,7 @@ footer p{
     header .fa-bars {
         display: none;
     }
+
      /* regola per l'apparizione menu navigazione a lato */
     #list{
         display: block;
@@ -510,14 +521,27 @@ footer p{
         display: flex;
         gap: 40px;
     }
+
+    #development{
+        margin-top: 200px;
+    }
+
+    #planning-image > h2, #planning-image > article{
+        margin: 10px 0;
+    }
+
+    #planning-image img{
+        padding: 20px 0;
+    }
     
     /* immagine phone della prima card */
     #image-large{
         margin-top: 70px;
+        display: flex;
+        align-items: flex-end;
     }
 
     #image-large img {
-        display: flex;
         max-width: 80%;
     }
 
@@ -538,13 +562,6 @@ footer p{
         width: calc((100% / 3) - 20px);
         margin: 10px 0;
     }
-
-    /* regola virgolette nella foto profilo about us */
-
-    /* #quote i.fa-quote-left { */
-        /* position: absolute; */
-        /* right: 80px; */
-    /* } */
 }
 
 /* schermi più grandi */
