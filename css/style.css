@@ -556,8 +556,8 @@ footer a{
         width: 60%;
     }
 
-    /* restringimento della sezione profili */
-    #section-users .container {
+    /* restringimento della sezione profili e sezione about us */
+    #section-users .container, #about .container {
         width: 70%;
     }
 
